@@ -1,0 +1,236 @@
+"charttime","itemid","label","valuenum"
+"2150-02-25 13:58:00",220052,"Arterial Blood Pressure mean",91
+"2150-02-25 14:00:00",220052,"Arterial Blood Pressure mean",103
+"2150-02-25 15:00:00",220052,"Arterial Blood Pressure mean",104
+"2150-02-25 15:25:00",220052,"Arterial Blood Pressure mean",107
+"2150-02-25 16:00:00",220052,"Arterial Blood Pressure mean",107
+"2150-02-25 17:00:00",220052,"Arterial Blood Pressure mean",109
+"2150-02-25 18:00:00",220052,"Arterial Blood Pressure mean",112
+"2150-02-25 19:03:00",220052,"Arterial Blood Pressure mean",104
+"2150-02-25 20:00:00",220052,"Arterial Blood Pressure mean",100
+"2150-02-25 21:00:00",220052,"Arterial Blood Pressure mean",107
+"2150-02-25 22:00:00",220052,"Arterial Blood Pressure mean",93
+"2150-02-25 23:00:00",220052,"Arterial Blood Pressure mean",96
+"2150-02-26 00:00:00",220052,"Arterial Blood Pressure mean",90
+"2150-02-26 01:13:00",220052,"Arterial Blood Pressure mean",89
+"2150-02-26 02:04:00",220052,"Arterial Blood Pressure mean",85
+"2150-02-26 03:00:00",220052,"Arterial Blood Pressure mean",88
+"2150-02-26 04:00:00",220052,"Arterial Blood Pressure mean",90
+"2150-02-26 05:00:00",220052,"Arterial Blood Pressure mean",85
+"2150-02-26 06:00:00",220052,"Arterial Blood Pressure mean",93
+"2150-02-26 07:00:00",220052,"Arterial Blood Pressure mean",85
+"2150-02-26 08:00:00",220052,"Arterial Blood Pressure mean",82
+"2150-02-26 09:00:00",220052,"Arterial Blood Pressure mean",80
+"2150-02-26 10:00:00",220052,"Arterial Blood Pressure mean",81
+"2150-02-26 11:00:00",220052,"Arterial Blood Pressure mean",82
+"2150-02-26 12:00:00",220052,"Arterial Blood Pressure mean",76
+"2150-02-26 13:00:00",220052,"Arterial Blood Pressure mean",82
+"2150-02-26 14:00:00",220052,"Arterial Blood Pressure mean",89
+"2150-02-26 15:00:00",220052,"Arterial Blood Pressure mean",87
+"2150-02-26 16:00:00",220052,"Arterial Blood Pressure mean",89
+"2150-02-26 17:00:00",220052,"Arterial Blood Pressure mean",91
+"2150-02-26 18:00:00",220052,"Arterial Blood Pressure mean",91
+"2150-02-26 19:00:00",220052,"Arterial Blood Pressure mean",88
+"2150-02-26 20:00:00",220052,"Arterial Blood Pressure mean",87
+"2150-02-26 21:00:00",220052,"Arterial Blood Pressure mean",92
+"2150-02-26 22:00:00",220052,"Arterial Blood Pressure mean",89
+"2150-02-26 23:00:00",220052,"Arterial Blood Pressure mean",90
+"2150-02-27 00:00:00",220052,"Arterial Blood Pressure mean",96
+"2150-02-27 01:00:00",220052,"Arterial Blood Pressure mean",94
+"2150-02-27 02:00:00",220052,"Arterial Blood Pressure mean",94
+"2150-02-27 03:00:00",220052,"Arterial Blood Pressure mean",98
+"2150-02-27 04:00:00",220052,"Arterial Blood Pressure mean",93
+"2150-02-27 05:00:00",220052,"Arterial Blood Pressure mean",94
+"2150-02-27 06:00:00",220052,"Arterial Blood Pressure mean",96
+"2150-02-25 13:57:00",220045,"Heart Rate",99
+"2150-02-25 13:58:00",220045,"Heart Rate",99
+"2150-02-25 14:00:00",220045,"Heart Rate",97
+"2150-02-25 15:00:00",220045,"Heart Rate",93
+"2150-02-25 15:25:00",220045,"Heart Rate",87
+"2150-02-25 16:00:00",220045,"Heart Rate",103
+"2150-02-25 17:00:00",220045,"Heart Rate",108
+"2150-02-25 18:00:00",220045,"Heart Rate",105
+"2150-02-25 19:00:00",220045,"Heart Rate",105
+"2150-02-25 20:00:00",220045,"Heart Rate",117
+"2150-02-25 21:00:00",220045,"Heart Rate",110
+"2150-02-25 22:00:00",220045,"Heart Rate",118
+"2150-02-25 23:00:00",220045,"Heart Rate",106
+"2150-02-26 00:00:00",220045,"Heart Rate",103
+"2150-02-26 01:00:00",220045,"Heart Rate",109
+"2150-02-26 02:00:00",220045,"Heart Rate",113
+"2150-02-26 03:00:00",220045,"Heart Rate",111
+"2150-02-26 04:00:00",220045,"Heart Rate",114
+"2150-02-26 05:00:00",220045,"Heart Rate",101
+"2150-02-26 06:00:00",220045,"Heart Rate",111
+"2150-02-26 07:00:00",220045,"Heart Rate",106
+"2150-02-26 08:00:00",220045,"Heart Rate",94
+"2150-02-26 09:00:00",220045,"Heart Rate",88
+"2150-02-26 10:00:00",220045,"Heart Rate",88
+"2150-02-26 11:00:00",220045,"Heart Rate",88
+"2150-02-26 12:00:00",220045,"Heart Rate",87
+"2150-02-26 13:00:00",220045,"Heart Rate",85
+"2150-02-26 14:00:00",220045,"Heart Rate",91
+"2150-02-26 15:00:00",220045,"Heart Rate",109
+"2150-02-26 16:00:00",220045,"Heart Rate",83
+"2150-02-26 17:00:00",220045,"Heart Rate",90
+"2150-02-26 18:00:00",220045,"Heart Rate",85
+"2150-02-26 19:00:00",220045,"Heart Rate",89
+"2150-02-26 20:00:00",220045,"Heart Rate",96
+"2150-02-26 21:00:00",220045,"Heart Rate",96
+"2150-02-26 22:00:00",220045,"Heart Rate",89
+"2150-02-26 23:00:00",220045,"Heart Rate",94
+"2150-02-27 00:00:00",220045,"Heart Rate",89
+"2150-02-27 01:00:00",220045,"Heart Rate",87
+"2150-02-27 02:00:00",220045,"Heart Rate",96
+"2150-02-27 03:00:00",220045,"Heart Rate",109
+"2150-02-27 04:00:00",220045,"Heart Rate",100
+"2150-02-27 05:00:00",220045,"Heart Rate",96
+"2150-02-27 06:00:00",220045,"Heart Rate",101
+"2150-02-27 07:00:00",220045,"Heart Rate",100
+"2150-02-27 08:00:00",220045,"Heart Rate",103
+"2150-02-27 09:00:00",220045,"Heart Rate",102
+"2150-02-27 10:00:00",220045,"Heart Rate",102
+"2150-02-27 11:00:00",220045,"Heart Rate",138
+"2150-02-27 12:00:00",220045,"Heart Rate",115
+"2150-02-27 13:00:00",220045,"Heart Rate",100
+"2150-02-27 14:00:00",220045,"Heart Rate",105
+"2150-02-27 15:00:00",220045,"Heart Rate",111
+"2150-02-27 16:00:00",220045,"Heart Rate",106
+"2150-02-27 17:00:00",220045,"Heart Rate",111
+"2150-02-26 08:59:00",220181,"Non Invasive Blood Pressure mean",78
+"2150-02-26 09:00:00",220181,"Non Invasive Blood Pressure mean",80
+"2150-02-27 06:04:00",220181,"Non Invasive Blood Pressure mean",85
+"2150-02-27 08:25:00",220181,"Non Invasive Blood Pressure mean",93
+"2150-02-27 09:35:00",220181,"Non Invasive Blood Pressure mean",84
+"2150-02-27 11:00:00",220181,"Non Invasive Blood Pressure mean",96
+"2150-02-27 12:30:00",220181,"Non Invasive Blood Pressure mean",81
+"2150-02-27 13:15:00",220181,"Non Invasive Blood Pressure mean",91
+"2150-02-27 14:00:00",220181,"Non Invasive Blood Pressure mean",89
+"2150-02-27 15:30:00",220181,"Non Invasive Blood Pressure mean",89
+"2150-02-27 16:15:00",220181,"Non Invasive Blood Pressure mean",88
+"2150-02-27 17:00:00",220181,"Non Invasive Blood Pressure mean",89
+"2150-02-25 13:57:00",220277,"O2 saturation pulseoxymetry",96
+"2150-02-25 13:58:00",220277,"O2 saturation pulseoxymetry",96
+"2150-02-25 14:00:00",220277,"O2 saturation pulseoxymetry",91
+"2150-02-25 15:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-25 15:25:00",220277,"O2 saturation pulseoxymetry",94
+"2150-02-25 16:00:00",220277,"O2 saturation pulseoxymetry",94
+"2150-02-25 17:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-25 18:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-25 19:00:00",220277,"O2 saturation pulseoxymetry",94
+"2150-02-25 20:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-25 21:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-25 22:00:00",220277,"O2 saturation pulseoxymetry",89
+"2150-02-25 23:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-26 00:00:00",220277,"O2 saturation pulseoxymetry",94
+"2150-02-26 01:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-26 02:00:00",220277,"O2 saturation pulseoxymetry",94
+"2150-02-26 03:00:00",220277,"O2 saturation pulseoxymetry",91
+"2150-02-26 04:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-26 05:00:00",220277,"O2 saturation pulseoxymetry",88
+"2150-02-26 06:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-26 07:00:00",220277,"O2 saturation pulseoxymetry",91
+"2150-02-26 08:00:00",220277,"O2 saturation pulseoxymetry",91
+"2150-02-26 09:00:00",220277,"O2 saturation pulseoxymetry",90
+"2150-02-26 10:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-26 11:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-26 12:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-26 13:00:00",220277,"O2 saturation pulseoxymetry",94
+"2150-02-26 14:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-26 15:00:00",220277,"O2 saturation pulseoxymetry",94
+"2150-02-26 16:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-26 17:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-26 18:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-26 19:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-26 20:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-26 21:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-26 22:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-26 23:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-27 00:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-27 01:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-27 02:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-27 03:00:00",220277,"O2 saturation pulseoxymetry",94
+"2150-02-27 04:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-27 05:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-27 06:00:00",220277,"O2 saturation pulseoxymetry",94
+"2150-02-27 07:00:00",220277,"O2 saturation pulseoxymetry",92
+"2150-02-27 08:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-27 09:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-27 10:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-27 11:00:00",220277,"O2 saturation pulseoxymetry",95
+"2150-02-27 12:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-27 13:00:00",220277,"O2 saturation pulseoxymetry",94
+"2150-02-27 14:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-27 15:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-27 16:00:00",220277,"O2 saturation pulseoxymetry",93
+"2150-02-27 17:00:00",220277,"O2 saturation pulseoxymetry",95
+"2150-02-25 13:57:00",220210,"Respiratory Rate",20
+"2150-02-25 13:58:00",220210,"Respiratory Rate",20
+"2150-02-25 14:00:00",220210,"Respiratory Rate",20
+"2150-02-25 15:00:00",220210,"Respiratory Rate",18
+"2150-02-25 15:25:00",220210,"Respiratory Rate",20
+"2150-02-25 16:00:00",220210,"Respiratory Rate",19
+"2150-02-25 17:00:00",220210,"Respiratory Rate",19
+"2150-02-25 18:00:00",220210,"Respiratory Rate",18
+"2150-02-25 19:00:00",220210,"Respiratory Rate",15
+"2150-02-25 20:00:00",220210,"Respiratory Rate",15
+"2150-02-25 21:00:00",220210,"Respiratory Rate",18
+"2150-02-25 22:00:00",220210,"Respiratory Rate",15
+"2150-02-25 23:00:00",220210,"Respiratory Rate",14
+"2150-02-26 00:00:00",220210,"Respiratory Rate",18
+"2150-02-26 01:00:00",220210,"Respiratory Rate",14
+"2150-02-26 02:00:00",220210,"Respiratory Rate",24
+"2150-02-26 03:00:00",220210,"Respiratory Rate",15
+"2150-02-26 04:00:00",220210,"Respiratory Rate",12
+"2150-02-26 05:00:00",220210,"Respiratory Rate",13
+"2150-02-26 06:00:00",220210,"Respiratory Rate",14
+"2150-02-26 07:00:00",220210,"Respiratory Rate",17
+"2150-02-26 08:00:00",220210,"Respiratory Rate",11
+"2150-02-26 09:00:00",220210,"Respiratory Rate",10
+"2150-02-26 10:00:00",220210,"Respiratory Rate",18
+"2150-02-26 11:00:00",220210,"Respiratory Rate",10
+"2150-02-26 12:00:00",220210,"Respiratory Rate",10
+"2150-02-26 13:00:00",220210,"Respiratory Rate",12
+"2150-02-26 14:00:00",220210,"Respiratory Rate",10
+"2150-02-26 15:00:00",220210,"Respiratory Rate",17
+"2150-02-26 16:00:00",220210,"Respiratory Rate",15
+"2150-02-26 17:00:00",220210,"Respiratory Rate",12
+"2150-02-26 18:00:00",220210,"Respiratory Rate",11
+"2150-02-26 19:00:00",220210,"Respiratory Rate",11
+"2150-02-26 20:00:00",220210,"Respiratory Rate",11
+"2150-02-26 21:00:00",220210,"Respiratory Rate",11
+"2150-02-26 22:00:00",220210,"Respiratory Rate",17
+"2150-02-26 23:00:00",220210,"Respiratory Rate",10
+"2150-02-27 00:00:00",220210,"Respiratory Rate",13
+"2150-02-27 01:00:00",220210,"Respiratory Rate",11
+"2150-02-27 02:00:00",220210,"Respiratory Rate",12
+"2150-02-27 03:00:00",220210,"Respiratory Rate",20
+"2150-02-27 04:00:00",220210,"Respiratory Rate",15
+"2150-02-27 05:00:00",220210,"Respiratory Rate",13
+"2150-02-27 06:00:00",220210,"Respiratory Rate",19
+"2150-02-27 07:00:00",220210,"Respiratory Rate",14
+"2150-02-27 08:00:00",220210,"Respiratory Rate",16
+"2150-02-27 09:00:00",220210,"Respiratory Rate",11
+"2150-02-27 10:00:00",220210,"Respiratory Rate",10
+"2150-02-27 11:00:00",220210,"Respiratory Rate",27
+"2150-02-27 12:00:00",220210,"Respiratory Rate",21
+"2150-02-27 13:00:00",220210,"Respiratory Rate",14
+"2150-02-27 14:00:00",220210,"Respiratory Rate",18
+"2150-02-27 15:00:00",220210,"Respiratory Rate",12
+"2150-02-27 16:00:00",220210,"Respiratory Rate",11
+"2150-02-27 17:00:00",220210,"Respiratory Rate",13
+"2150-02-25 13:58:00",223761,"Temperature Fahrenheit",97
+"2150-02-25 16:00:00",223761,"Temperature Fahrenheit",97
+"2150-02-25 20:00:00",223761,"Temperature Fahrenheit",99.8
+"2150-02-26 00:00:00",223761,"Temperature Fahrenheit",100.7
+"2150-02-26 03:00:00",223761,"Temperature Fahrenheit",100
+"2150-02-26 05:00:00",223761,"Temperature Fahrenheit",99.3
+"2150-02-26 08:00:00",223761,"Temperature Fahrenheit",98.4
+"2150-02-26 12:00:00",223761,"Temperature Fahrenheit",97.2
+"2150-02-26 16:00:00",223761,"Temperature Fahrenheit",98
+"2150-02-26 20:00:00",223761,"Temperature Fahrenheit",98.5
+"2150-02-27 00:00:00",223761,"Temperature Fahrenheit",98.3
+"2150-02-27 04:00:00",223761,"Temperature Fahrenheit",98.7
+"2150-02-27 08:00:00",223761,"Temperature Fahrenheit",98.1
+"2150-02-27 12:00:00",223761,"Temperature Fahrenheit",98.2
+"2150-02-27 16:00:00",223761,"Temperature Fahrenheit",98.4

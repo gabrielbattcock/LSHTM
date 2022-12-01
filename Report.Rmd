@@ -1,3 +1,5 @@
+#candidate number 221352
+
 ---
 title: "Report for Beth Israel Deaconess Medical Cetre"
 date: "2022-10-26"
@@ -9,8 +11,15 @@ fontsize: 10pt
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+## please uncomment any of the packages if you do not already have them installed
+# install.packages("readr")
+# install.packages("tidyverse")
+# install.packages("ggplot2")
+# install.packages("ggpubr")
+# install.packages("grid")
+
 library(readr)
-library(arsenal)
 library(tidyverse)
 library(ggplot2)
 library(ggpubr)
@@ -26,9 +35,10 @@ setwd("~/Documents/LSHTM/HDM/Project")
 ### Information on patient 42130 for the most recent hospital visit in which Simvastatin was prescribed
 
 ```{r, echo = FALSE,message=FALSE}
-
-demographic <- read_csv("demographic.csv")
-diagnoses <- read_csv("diagnoses.csv")
+path_to_file_demo <-"demographic.csv"
+path_to_file_diag <- "diagnoses.csv"
+demographic <- read_csv(path_to_file_demo)
+diagnoses <- read_csv(path_to_file_diag)
 prescriptions <- read_csv("prescriptions.csv")
 
 #convert the diagnoses and prescriptions to string to add to the table
@@ -57,8 +67,9 @@ knitr::kable(diag_pres, align = "cc", "pipe")
 
 ### Vital signs for patient 42130
 
-```{r vitals, echo=FALSE, out.width="100%", fig.width = 10, fig.align='center',  message = FALSE}
-vitals <- read_csv("time_series.csv")
+```{r vitals, echo=FALSE, out.width="100%", fig.width = 8, fig.align='center',  message = FALSE}
+path_to_file_vital <- "time_series.csv"
+vitals <- read_csv(path_to_file_vital)
 
 #split input data frame into separate frames for ease of plotting
 hr <- filter(vitals, itemid == 220045)
@@ -72,7 +83,7 @@ bp <- rbind(bp1,bp2)
 
 #plot the lines on a single plot
 plot <-ggplot() +
-          geom_line(data=hr, aes(x=charttime, y = valuenum, color = "Hear rate (bpm)" )) +
+          geom_line(data=hr, aes(x=charttime, y = valuenum, color = "Heart rate (bpm)" )) +
           geom_line(data=bp, aes(x=charttime, y = valuenum, color = "Blood pressure (mmHg)")) +
           geom_line(data=o2, aes(x=charttime, y = valuenum, color = "Blood oxygen (%)")) +
           geom_line(data=resp_rate, aes(x=charttime, y = valuenum, color = "Respiratory rate (per minute)")) +
@@ -80,9 +91,9 @@ plot <-ggplot() +
           labs(x="Chart time", y = "Vital value") +
           scale_color_manual(
                 name = "Vital signs",
-                breaks = c("Hear rate (bpm)", "blood pressure (mmHg)", "Blood oxygen (%)",
+                breaks = c("Heart rate (bpm)", "Blood pressure (mmHg)", "Blood oxygen (%)",
                                             "Respiratory rate (per minute)", "Temperature (F)"),
-                values = c("Hear rate (bpm)" = "red", "blood pressure (mmHg)" = "blue",
+                values = c("Heart rate (bpm)" = "red", "Blood pressure (mmHg)" = "blue",
                            "Blood oxygen (%)" = "green", "Respiratory rate (per minute)" = "orange",
                            "Temperature (F)" = "black"))
 plot
@@ -95,10 +106,11 @@ plot
 Detailed below is information on patients of similar age to patient 42130, also with a cardiac device.
 
 
-```{r cardiac, echo=FALSE, tab.align = 'left',  message = FALSE}
+```{r cardiac, echo=FALSE,  message = FALSE}
 
-#read in the data
-cardiac <- read_csv("icu_stay_time.csv")
+#read in the data from correct csv file
+path_to_file_staytime <- "icu_stay_time.csv"
+cardiac <- read_csv(path_to_file_staytime)
 
 #transform the d_in_icu field into yes or no
 
@@ -106,32 +118,37 @@ cardiac$d_in_icu <- factor(cardiac$d_in_icu, labels = c("No", "Yes"))
 
 #create a stratified stat table using the Epi package
 
-cardiac_summary <- stat.table(index=list("Gender"=gender, "Died in ICU?"=d_in_icu),
+icu_summary <- stat.table(index=list("Gender"=gender, "Died in ICU?"=d_in_icu),
                              contents=list(Median=median(timeper_admit), LowerQuartile=quantile(timeper_admit, prob=0.25),
                                              UpperQuartile = quantile(timeper_admit, prob=.75),
                                              Min=min(timeper_admit), Max = max(timeper_admit)),
                               cardiac, margins=F)
-names(cardiac_summary) <- c("Females who did NOT die in icu", 
-                            "Males who did NOT die in icu",
-                            "Females who DID die in icu", 
-                            "Males who DID not die in icu")
 
-knitr::kable(cardiac_summary)
+cardiac_summary <- stat.table(index=list("Gender"=gender, "Died in ICU?"=d_in_icu),
+                             contents=list(Median=median(hlos), LowerQuartile=quantile(hlos, prob=0.25),
+                                             UpperQuartile = quantile(hlos, prob=.75),
+                                             Min=min(hlos), Max = max(hlos)),
+                              cardiac, margins=F)
+
+
+knitr::kable(cardiac_summary, caption = "Summary of hosptial stay length (days)")
+knitr::kable(icu_summary, caption = "Summary of total ICU stay length (days)")
+
 
 
 ```
 
-Above time is given in fractional days. The data has been stratified by gender (M or F), and whether they have died in within 6 hours of being admitted or discharged from ICU (Yes or No).
+The above data has been stratified by gender (M or F) and whether they have died in ICU, defined as dying within 6 hours of being admitted or discharged from ICU (Yes or No).
 
 ### Summary of ICU stays for 60-65 year old patients with a cardiac device who died while in the ICU 
 
 ```{r, echo = FALSE, message=FALSE}
 #set file path to wear the csv is stored
-file_path <- "death_icu.csv"
-death_icu <- read_csv(file_path)
+file_path_death <- "death_icu.csv"
+death_icu <- read_csv(file_path_death)
 
 #rename the column names
-names(death_icu) <- c("ID", "M/F", "Age", "Stay time", "First ICD", "First 4 listed diagnoses")
+names(death_icu) <- c("ID", "M/F", "Age", "Stay time", "First ICD", "Top 3 listed diagnoses")
 
 #make the table
 knitr::kable(death_icu)
@@ -142,16 +159,16 @@ knitr::kable(death_icu)
 
 ```{r icu_avg, echo= FALSE, out.width = "100%",, fig.algin = "center", message = FALSE, error=FALSE}
 
-tot_avg <- read_csv("icu_average.csv")
-card_avg <- read_csv("60-65_average.csv")
-card_simv <- read_csv("60_65_cardiac.csv")
+#set path to file to correct csv file
+path_to_file_avg <- "icu_average.csv"
+path_to_file_card <- "60-65_average.csv"
+path_to_file_simv <- "simvastatin.csv"
+path_to_file_no_simv <- "not_simvastatin.csv"
 
-simv <- filter(card_simv, card_simv$simv==1)
-no_simv <- filter(card_simv, card_simv$simv==0)
-
-#remove the flag column 
-simv = subset(simv, select = -simv )
-no_simv = subset(no_simv, select = -simv )
+tot_avg <- read_csv(path_to_file_avg)
+card_avg <- read_csv(path_to_file_card)
+simv <- read_csv(path_to_file_simv)
+no_simv <- read_csv(path_to_file_no_simv)
 
 #create a tibble with no stay time for the neo_nate patients
 neo_nates <- tibble(careunit = c("NICU", "NWARD"), avg_staytime = c(0, 0) )
@@ -167,18 +184,23 @@ card_avg <- card_avg[order(card_avg$careunit),]
 simv <- simv[order(simv$careunit),]
 no_simv <- no_simv[order(no_simv$careunit),]
 
+#rename the y-axis
 names(tot_avg) <- c("careunit", "totstay")
 names(card_avg) <- c("careunit", "cardavg")
 names(simv) <- c("careunit", "simvstay")
 names(no_simv) <- c("careunit", "nosimvstay")
 
-# total <- merge(tot_avg, card_avg, by = "careunit")
-total <- merge(total, simv, by ="careunit")
-total <- merge(total, no_simv, by = "careunit")
+#define the aggregate avg for each group, calculated in sql and transfered here
 
-ggplot(data= total, aes(x=careunit, y=c(totstay, cardavg, simvstay,nosimvstay)))
-?gather
-tot_plot <- ggplot(data=tot_avg, aes(x=careunit, y=avg_staytime, fill = careunit)) + 
+tot_agg <- 4.59
+card_agg <- 3.59
+simv_agg <- 3.99
+no_simv_agg <- 3.50
+
+
+#create four plots
+tot_plot <- ggplot(data=tot_avg, aes(x=careunit, y=totstay, fill = careunit)) + 
+            geom_hline(yintercept = tot_agg, linetype = "dashed") +
             labs( x = "Care Unit", y = "Average stay length (days)", subtitle =  
                     "All patients") +
             geom_bar(stat="identity") +
@@ -186,7 +208,8 @@ tot_plot <- ggplot(data=tot_avg, aes(x=careunit, y=avg_staytime, fill = careunit
                   axis.text.x=element_blank(),
                   axis.ticks.x=element_blank()) 
             
-card_avg_plot <-ggplot(data=card_avg, aes(x=careunit, y=avg_staytime, fill = careunit)) + 
+card_avg_plot <-ggplot(data=card_avg, aes(x=careunit, y=cardavg, fill = careunit)) + 
+                geom_hline(yintercept = card_agg, linetype = "dashed" ) +
                 labs( x = "Care Unit", y = "Average stay length (days)", subtitle =  
                         "60-65 with a cardiac device") + 
                 geom_bar(stat="identity") +
@@ -194,7 +217,8 @@ card_avg_plot <-ggplot(data=card_avg, aes(x=careunit, y=avg_staytime, fill = car
                       axis.text.x=element_blank(),
                       axis.ticks.x=element_blank())
 
-simv_plot <-  ggplot(data=simv, aes(x=careunit, y=avg_staytime, fill = careunit)) +
+simv_plot <-  ggplot(data=simv, aes(x=careunit, y=simvstay, fill = careunit)) +
+              geom_hline(yintercept = simv_agg, linetype = "dashed") +
               labs( x = "Care Unit", y = "Average stay length (days)", subtitle =  
                       "60-65 with a cardiac device \n prescribed simvastatin")  +
               geom_bar(stat="identity") +
@@ -202,7 +226,8 @@ simv_plot <-  ggplot(data=simv, aes(x=careunit, y=avg_staytime, fill = careunit)
                     axis.text.x=element_blank(),
                     axis.ticks.x=element_blank())
 
-no_simv_plot <- ggplot(data=no_simv, aes(x=careunit, y=avg_staytime, fill = careunit)) + 
+no_simv_plot <- ggplot(data=no_simv, aes(x=careunit, y=nosimvstay, fill = careunit)) + 
+                geom_hline(yintercept = no_simv_agg, linetype = "dashed"  ) +
                 labs( x = "Care Unit", y = "Average stay length (days)", subtitle = 
                       "60-65 with a cardiac device \n not prescribed simvastatin") +
                 geom_bar(stat="identity") + 
@@ -212,7 +237,11 @@ no_simv_plot <- ggplot(data=no_simv, aes(x=careunit, y=avg_staytime, fill = care
 
 #pu the plots together using ggarrange
 figure <- ggarrange(tot_plot + rremove("ylab"), card_avg_plot + rremove("ylab"), simv_plot + rremove("ylab"), no_simv_plot + rremove("ylab"), 
-          ncol = 2, nrow = 2, common.legend = TRUE)
-annotate_figure(figure, left = textGrob("Time spent in ICU (days)", rot = 90, vjust = 1, gp = gpar(cex = 1.3)))
+          ncol = 2, nrow = 2, common.legend = TRUE) 
+          
+annotate_figure(figure, left = textGrob("Time spent in ICU (days)", rot = 90, vjust = 1, gp = gpar(cex = 1.3))) 
+  
 
 ```
+
+The dashed lines are the aggregated averages across the ICUs for each of the groups.
